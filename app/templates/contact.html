@@ -1,0 +1,56 @@
+<!Doctype html>
+<head>
+  <title> </title>
+  <style>
+    form{
+      background-color: green;
+      width: 300px;
+    }
+    strong{
+      font-family: Verdana;
+      color: #000000;
+      margin: 0px;
+    }
+    p{
+      color: #000000;
+      margin: 0px;
+    }
+    label{
+      color: #000000;
+    }
+    #send{
+      margin-top: 5px;
+      margin-left: 15px;
+      border: 1px solid red;
+      border-radius: 25px;
+    }
+  </style>
+<head>
+{{email_status|default("")}}
+
+<form method ='POST' action = '#' action= '.'>
+  <strong>CONTACT FORM </strong>
+  <p> Fill in your form to contct the site owner<p>
+  
+  <label>Name: </label><br>
+ <p> Enter your your full name<p>
+ <input type="text" name="name">
+ <br>
+ 
+ <label>Email:</label><br>
+ <p> Enter your email<p>
+ <input type="text" name="email">
+ <br>
+ 
+ <label>Subject:</label><br>
+ <input type="text" name="subject">
+ <br>
+
+ <label>Message:</label><br>
+ <p> Please enter a message<p>
+ <input type="text" name="message" >
+ <br>
+  
+<input type="submit" value="send" id = 'send'>
+<br>
+</form>
